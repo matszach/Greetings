@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'slkscrb';
+  src: local('slkscrb'), url('./../assets/fonts/slkscr.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'texturina';
+  src: local('texturina'), url('./../assets/fonts/Texturina-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+* {
+  // font-family: 'slkscrb';
+  font-family: 'Texturina';
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width:  1vw;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #030303;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #090909;
+}
+
+::-webkit-scrollbar-track {
+  background: #131313;
+}

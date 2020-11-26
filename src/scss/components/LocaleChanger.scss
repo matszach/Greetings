@@ -1,0 +1,33 @@
+.LocaleChanger {
+    display: block;
+    float: right;
+    margin-right: 1em;
+}
+
+.flag {
+    float: right;
+    cursor: pointer;
+    color: red;
+    height: 100%;
+    padding: 0.5vw 0.2vw;
+    margin: 0.5vw 0.2vw;
+    transition-duration: 200ms;
+}
+
+.flag.selected {
+    cursor: default;
+    filter: grayscale(1);
+}
+
+.flag:not(.selected):hover {
+    transform: scale(1.1);
+}
+
+.flag:not(.selected):active {
+    transform: scale(0.9);
+}
+
+.flagIcon {
+    width: 1.5em;
+    height: 1.5em;
+}

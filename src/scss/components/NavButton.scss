@@ -1,0 +1,40 @@
+@import './../const.scss';
+
+.NavButton {
+    display: inline-block;
+    cursor: pointer;
+    background: $grad;
+    transition-duration: 300ms;
+}
+
+.outer {
+    background-color: $bg-dark;
+    padding: 0.5vw 1vw;
+    transition-duration: 200ms;
+}
+
+.NavButton:hover {
+    .outer {
+        transform: translateY(-0.5vh);
+    }
+    filter: drop-shadow(0 0 0.5vh #55f);
+}
+
+.NavButton:active {
+    .outer {
+        transform: translateY(-0.2vh);
+    }
+    filter: drop-shadow(0 0 0.2vh #55f);
+
+}
+
+.inner {
+    display: inline-block;
+    background: $grad;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+}

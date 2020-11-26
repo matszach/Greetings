@@ -1,0 +1,26 @@
+
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    user-select: none;
+    opacity: 0.1;
+    transition-duration: 500ms;
+    z-index: 1;
+}
+
+.Navbar.isTop,
+.Navbar:hover {
+    filter: drop-shadow(0 0 1vh #001);
+}
+
+.Navbar.isTop {
+    opacity: 0.7;
+}
+
+.Navbar:hover {
+    opacity: 1.0;
+}

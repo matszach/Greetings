@@ -1,0 +1,10 @@
+{
+    "nav": {
+        "home": "Powrót",
+        "about": "O mnie",
+        "technologies": "Technologie",
+        "otherSkills": "Inne umiejętności",
+        "projects": "Projekty",
+        "contact": "Kontakt"
+    }
+}

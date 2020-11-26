@@ -1,0 +1,18 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About me",
+        "technologies": "Technologies",
+        "otherSkills": "Other skills",
+        "projects": "Projects",
+        "contact": "Contact me"
+    },
+    "about": {
+        "first": "Hello there! My name is Łukasz Kaszubowski and I'm a self taught software engineer with a civil engineering background.",
+        "second": "I specialise mostly in JavaScript and other front-end related technologies but I also am no stranger to the back end side of web development."
+    },
+    "contact": {
+        "contactMe": "Contact me",
+        "playMe": "Play me"
+    }
+}

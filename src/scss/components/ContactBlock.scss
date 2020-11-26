@@ -1,0 +1,39 @@
+@import './../const.scss';
+
+.ContactBlock {
+    display: inline-block;
+    width: 25%;
+    height: 40vh;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 5vh;
+    transition-duration: 200ms;
+}
+
+.ContactBlock.clickable {
+    cursor: pointer;
+}
+
+.ContactBlock:hover {
+    filter: invert(90%)
+}
+
+.contact-img {
+    height: 20vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    user-select: none;
+}
+
+.contact-label {
+    font-size: large
+}
+
+@media only screen and (max-width: 600px) {
+    .ContactBlock {
+        width: 50%;
+    }
+    .contact-label {
+        font-size: medium;
+    }
+}
