@@ -13,6 +13,20 @@ class ContactBlock extends React.Component {
     handleClick() {
         if(this.props.url) {
             window.open(this.props.url);
+        } else {
+            const node = document.getElementById('cl-' + this.props.desc);
+            if (document.body.createTextRange) {
+                const range = document.body.createTextRange();
+                range.moveToElementText(node);
+                range.select();
+            } else if (window.getSelection) {
+                const selection = window.getSelection();
+                const range = document.createRange();
+                range.selectNodeContents(node);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+            document.execCommand('copy');
         }
     }
 
@@ -26,7 +40,7 @@ class ContactBlock extends React.Component {
                 <div className="contact-img-holder">
                     <img className="contact-img" src={this.props.img} alt=''/>
                 </div>
-                <label className="contact-label">{this.props.desc}</label>
+                <label className="contact-label" id={'cl-' + this.props.desc}>{this.props.desc}</label>
             </div>
         );
     }
