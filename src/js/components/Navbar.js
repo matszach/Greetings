@@ -16,7 +16,7 @@ class Navbar extends React.Component {
             const y = window.scrollY;
             const nav = document.getElementById('Navbar');
             if(nav) {
-                if(y > 50) {
+                if(y > 200) {
                     nav.classList.remove('isTop');
                 } else {
                     nav.classList.add('isTop');
