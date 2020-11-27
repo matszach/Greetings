@@ -3,7 +3,7 @@ import Gmt from './../lib/gmt';
 
 class HomeAnimation extends Animation {
 
-    doFrame(loop, cw) {
+    doFrame(loop, isMobile, cw) {
         cw.clear();
         const f = loop.getFrame();
         const bRect = cw.getBoundingRect();
@@ -12,7 +12,7 @@ class HomeAnimation extends Animation {
         const nofPentagons = Math.max(bRect.width, bRect.height)/70 + 10;
         Gmt.iter1D(nofPentagons, i => {
             const circle = center.toCircle(100 + 35 * i);
-            const dir = ((i / 120) + (f / 4000)) * 2 * Math.PI; 
+            const dir = ((i / 120) + (f / 4000)) * 2 * Math.PI * (isMobile ? 2 : 1); 
             const pentagon = circle.toPolygon(5, dir);
             let cs = (((f / 5) % 20 + i) % 10) * 15;
             cs = cs < 75 ? cs : 150 - cs;

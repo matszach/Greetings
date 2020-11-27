@@ -4,13 +4,13 @@ class Animation {
         this.init();
     }
 
-    _doFrame(loop, wrapper) {
+    _doFrame(loop, isMobile, wrapper) {
         if(!!wrapper) {
-            this.doFrame(loop, wrapper);
+            this.doFrame(loop, isMobile, wrapper);
         }
     }
 
-    doFrame(loop, wrapper) {
+    doFrame(loop, isMobile, wrapper) {
         // abstract
     }
 
