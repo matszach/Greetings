@@ -13,6 +13,20 @@
     transition-duration: 200ms;
 }
 
+.NavButton:hover {
+    .outer {
+        transform: translateY(-0.5vh);
+    }
+    filter: drop-shadow(0 0 0.5vh #55f);
+}
+
+.NavButton:active {
+    .outer {
+        transform: translateY(-0.2vh);
+    }
+    filter: drop-shadow(0 0 0.2vh #55f);
+}
+
 .inner {
     display: inline-block;
     background: $grad;
@@ -22,16 +36,4 @@
     height: 100%;
     width: 100%;
     font-size: x-large;
-}
-
-.NavButton:hover {
-    .outer {
-        transform: translateY(-0.5vh);
-    }
-}
-
-.NavButton:active {
-    .outer {
-        transform: translateY(-0.2vh);
-    }
 }
