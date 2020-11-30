@@ -1,0 +1,24 @@
+@import './../const.scss';
+
+$skew: 3deg;
+$scale: 1.1;
+
+.AskewTransition {
+    margin-bottom: 20px;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 5vw;
+    width: 100vw;
+    box-shadow: 0 -5vh 3vh rgba(0, 0, 0, 0.2);
+    &.left {
+        background-color: $bg-light;
+        transform-origin: top left;
+        transform: scale($scale) rotate(-$skew);
+    }
+    &.right {
+        background-color: $bg-lighter;
+        transform-origin: top right;
+        transform: scale($scale) rotate($skew);
+    }
+}
